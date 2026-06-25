@@ -1,5 +1,5 @@
 ```bash
-rfid-deeplearning-pico2/
+rfid-deeplearning-pico/
 ├── src/
 │   ├── hardware/
 │   │   ├── main.py          # Código principal de execução
@@ -9,7 +9,7 @@ rfid-deeplearning-pico2/
 ├── README.md                # O guia que preparamos
 └── requirements.txt         # (Opcional) Ferramentas para PC (mpremote, etc.)
 ```
-# RFID Deep Learning - Raspberry Pi Pico
+# RFID Deep Learning - Raspberry Pi Pico 
 
 Este projeto implementa um sistema de autenticação e análise de tags RFID utilizando **Inteligência Artificial (LSTM)** rodando localmente em uma **Raspberry Pi Pico (RP2040)**. 
 O sistema foi projetado para ser minimalista, eficiente e de baixo consumo, eliminando componentes periféricos desnecessários para focar no processamento de dados na borda.

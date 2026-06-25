@@ -1,4 +1,4 @@
-rfid-deeplearning-pico2w/
+"rfid-deeplearning-pico2w/
 ├── src/
 │   ├── hardware/
 │   │   ├── main.py          # Código principal de execução
@@ -6,7 +6,7 @@ rfid-deeplearning-pico2w/
 │   └── model/
 │       └── model.mpy        # Modelo treinado
 ├── README.md                # O guia que preparamos
-└── requirements.txt         # (Opcional) Ferramentas para PC (mpremote, etc.)
+└── requirements.txt         # (Opcional) Ferramentas para PC (mpremote, etc.)"
 
 # RFID Deep Learning - Raspberry Pi Pico
 
@@ -32,16 +32,16 @@ O sistema foi projetado para ser minimalista, eficiente e de baixo consumo, elim
 
 > ⚠️ **Atenção:** Nunca alimente o RC522 com 5V, pois isso pode danificar permanentemente os pinos da Raspberry Pi Pico. Utilize sempre o pino 3V3.
 
-📥 Instalação do Firmware MicroPython
+##📥 Instalação do Firmware MicroPython
 Para preparar a sua Raspberry Pi Pico para rodar os scripts deste projeto, siga este procedimento de instalação do interpretador MicroPython:
 
-Download do Firmware:
+###Download do Firmware:
 
 Acesse o site oficial: micropython.org/download/RPI_PICO/
 
 Baixe o arquivo mais recente com a extensão .uf2 (ex: rp2-pico-v1.xx.x.uf2).
 
-Modo de Gravação (BOOTSEL):
+###Modo de Gravação (BOOTSEL):
 
 Com a sua Raspberry Pi Pico desconectada do computador, pressione e mantenha pressionado o botão BOOTSEL da placa.
 
@@ -49,7 +49,7 @@ Enquanto segura o botão, conecte o cabo USB ao seu computador.
 
 Assim que conectar, solte o botão. O sistema operacional irá reconhecer a Pico como um dispositivo de armazenamento removível (um "pendrive") chamado RPI-RP2.
 
-Gravação do Firmware:
+###Gravação do Firmware:
 
 Localize o arquivo .uf2 que você baixou.
 
@@ -57,11 +57,11 @@ Arraste ou copie o arquivo diretamente para a raiz do disco RPI-RP2.
 
 A placa irá processar o arquivo automaticamente, o disco RPI-RP2 irá desaparecer do sistema e a Pico reiniciará já executando o ambiente MicroPython.
 
-Finalização:
+###Finalização:
 
 Após alguns segundos, a Pico estará pronta para se comunicar via porta serial. Você pode confirmar o sucesso da instalação utilizando ferramentas como o mpremote ou o Thonny IDE.
 
-Por que instalamos o MicroPython?
+###Por que instalamos o MicroPython?
 O MicroPython é uma implementação otimizada do Python 3, especificamente desenhada para rodar em microcontroladores com recursos limitados. Ao instalá-lo na Raspberry Pi Pico, transformamos o hardware em um ambiente de desenvolvimento dinâmico:
 
 Interatividade (REPL): Permite testar comandos linha a linha em tempo real, eliminando a necessidade de recompilar todo o código a cada pequena alteração.

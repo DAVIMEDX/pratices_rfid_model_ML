@@ -1,5 +1,5 @@
 ```bash
-rfid-deeplearning-pico2w/
+rfid-deeplearning-pico2/
 ├── src/
 │   ├── hardware/
 │   │   ├── main.py          # Código principal de execução

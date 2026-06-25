@@ -32,6 +32,46 @@ O sistema foi projetado para ser minimalista, eficiente e de baixo consumo, elim
 
 > ⚠️ **Atenção:** Nunca alimente o RC522 com 5V, pois isso pode danificar permanentemente os pinos da Raspberry Pi Pico. Utilize sempre o pino 3V3.
 
+📥 Instalação do Firmware MicroPython
+Para preparar a sua Raspberry Pi Pico para rodar os scripts deste projeto, siga este procedimento de instalação do interpretador MicroPython:
+
+Download do Firmware:
+
+Acesse o site oficial: micropython.org/download/RPI_PICO/
+
+Baixe o arquivo mais recente com a extensão .uf2 (ex: rp2-pico-v1.xx.x.uf2).
+
+Modo de Gravação (BOOTSEL):
+
+Com a sua Raspberry Pi Pico desconectada do computador, pressione e mantenha pressionado o botão BOOTSEL da placa.
+
+Enquanto segura o botão, conecte o cabo USB ao seu computador.
+
+Assim que conectar, solte o botão. O sistema operacional irá reconhecer a Pico como um dispositivo de armazenamento removível (um "pendrive") chamado RPI-RP2.
+
+Gravação do Firmware:
+
+Localize o arquivo .uf2 que você baixou.
+
+Arraste ou copie o arquivo diretamente para a raiz do disco RPI-RP2.
+
+A placa irá processar o arquivo automaticamente, o disco RPI-RP2 irá desaparecer do sistema e a Pico reiniciará já executando o ambiente MicroPython.
+
+Finalização:
+
+Após alguns segundos, a Pico estará pronta para se comunicar via porta serial. Você pode confirmar o sucesso da instalação utilizando ferramentas como o mpremote ou o Thonny IDE.
+
+Por que instalamos o MicroPython?
+O MicroPython é uma implementação otimizada do Python 3, especificamente desenhada para rodar em microcontroladores com recursos limitados. Ao instalá-lo na Raspberry Pi Pico, transformamos o hardware em um ambiente de desenvolvimento dinâmico:
+
+Interatividade (REPL): Permite testar comandos linha a linha em tempo real, eliminando a necessidade de recompilar todo o código a cada pequena alteração.
+
+Gerenciamento de Hardware: O MicroPython abstrai o controle complexo de registradores (como SPI, I2C, GPIO), permitindo que você controle sensores complexos (como o módulo RFID) com poucas linhas de código.
+
+Autonomia: O sistema de arquivos interno permite que o seu main.py seja executado automaticamente ao iniciar, tornando o projeto independente de um computador host para funcionar.
+
+Essa abordagem oferece o equilíbrio perfeito entre a facilidade de desenvolvimento da linguagem Python e o controle preciso de baixo nível exigido em projetos de Edge AI e sistemas embarcados.
+
 ## 🚀 Instalação via mpremote
 
 Caso prefira não compilar o firmware, você pode enviar os arquivos diretamente para a placa:
